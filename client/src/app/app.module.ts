@@ -6,13 +6,17 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { HttpService } from './http.service';
 import { IndexComponent } from './index/index.component';
-// forms
-// httpclientmodel
+import { ShowComponent } from './show/show.component';
+import { CreateComponent } from './create/create.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    IndexComponent
+    IndexComponent,
+    ShowComponent,
+    CreateComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
