@@ -6,11 +6,11 @@ let app = express();
 const PORT = 8010;
 
 app.use(bodyParser.json());
+app.use(express.static(path.join(__dirname, '/client/dist/client')));
 
 require('./server/config/mongoose');
 require('./server/config/routes')(app);
 
-app.use(express.static(path.join(__dirname, '/client/dist/client')));
 
 
 app.listen(PORT, function(){
