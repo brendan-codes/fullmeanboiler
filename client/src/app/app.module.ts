@@ -9,6 +9,7 @@ import { IndexComponent } from './index/index.component';
 import { ShowComponent } from './show/show.component';
 import { CreateComponent } from './create/create.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { NotFoundComponent } from './not-found/not-found.component';
     IndexComponent,
     ShowComponent,
     CreateComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
